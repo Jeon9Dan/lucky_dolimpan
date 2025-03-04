@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>돌림판 게임</title>
+  <!-- Google Fonts: Noto Sans KR Bold -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="wheelContainer">
+      <!-- 제목 입력 박스 (캔버스에는 그리지 않음) -->
+      <input type="text" id="wheelTitleInput" placeholder="돌림판 제목" style="font-size:24px; margin-bottom:10px;"/>
+      <div id="resultBox">당첨 메뉴: </div>
+      <!-- 캔버스 크기는 600x600으로 -->
+      <canvas id="wheel" width="600" height="600"></canvas>
+      <div id="buttonContainer">
+        <!-- 시작 버튼 -->
+        <button id="spinButton">시작</button>
+      </div>
+    </div>
+    <div id="menuContainer">
+      <h2>메뉴 추가</h2>
+      <input type="text" id="menuName" placeholder="메뉴 이름" style="font-size:24px;"/>
+      <input type="number" id="menuCount" placeholder="개수" min="1" value="1" style="font-size:24px;"/>
+      <button id="addMenuButton" style="font-size:24px;">추가</button>
+      <h3>현재 메뉴</h3>
+      <ul id="menuList"></ul>
+    </div>
+  </div>
+  <div id="footer">제작자 : 춘식이</div>
+  <script src="src/main.js"></script>
+</body>
+</html>
