@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f9f9f9;
+}
+#container {
+    display: flex;
+    width: 100%;
+}
+#wheelContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#resultBox {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#menuContainer {
+    width: 300px;
+    margin-left: 20px;
+    font-size: 24px;
+}
+/* 돌림판 스타일: 크기 확대, 그림자, 둥근 모서리 */
+#wheel {
+    width: 600px;
+    height: 600px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+#buttonContainer {
+    margin-top: 20px;
+}
+input, button {
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 24px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+}
+li {
+    padding: 3px 0;
+}
+li button {
+    margin-left: 5px;
+    font-size: 24px;
+}
+/* 오른쪽 하단에 고정될 제작자 텍스트 */
+#footer {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
